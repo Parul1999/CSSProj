@@ -9,7 +9,7 @@ body{
 .main{
     display: flex;
     height: 100vh;
-    padding: 0.2rem;
+    padding: 2.2rem 0.2rem;
 }
 
 .main-content{
@@ -17,7 +17,7 @@ body{
     /* To get all the space that is left */
     flex:1 ;
     border-radius: 1rem;
-    overflow: auto;
+    overflow-y: auto;
     padding-bottom: 3rem;
 }
 .music-player{
@@ -114,21 +114,7 @@ body{
     height: 8.5rem;
     margin: 0.75rem 0 1.5rem 0;
 }
-@media (max-width:1400px){
-    .lib-container{
-        height: 9.5rem;
-    }
-}
-@media (max-width:1017px){
-    .lib-container{
-        height: 10.5rem;
-    }
-}
-@media (max-width:860px){
-    .lib-container{
-        height: 11.5rem;
-    }
-}
+
 .lib-heading{
     font-size: 1.25rem;
     font-weight: bold;
@@ -191,11 +177,6 @@ background-color: #000000;
 color: #ffffff;
 }
 
-@media(max-width: 1000px){
-  #resp-hide{
-    display: none;
-  }
-}
 .list-head{
     margin: 0 1.5rem;
 }
@@ -375,3 +356,75 @@ display: flex;
     background-color: #1bd760;
     margin-top:-6px;
 }
+.sidebar-checkbox{
+    display: none;
+}
+
+.menu-btn ,.sidebar-checkbox:checked ~ .menu-btn,.cross-btn{
+    display: none;
+}
+.cross-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+.sidebar-checkbox:checked ~ .sidebar{
+    display: block;
+    position: absolute;
+    z-index: 12;
+    background: black;
+    top: 0;
+    width: 33%;
+    height: 100%;
+    }
+.sidebar-checkbox:checked ~ .sidebar .cross-btn{
+    display: block;
+  
+}
+/* Responsive */
+@media (max-width:1400px){
+    .lib-container{
+        height: 9.5rem;
+    }
+}
+@media (max-width:1017px){
+    .lib-container{
+        height: 10.5rem;
+    }
+}
+@media (max-width:860px){
+    .lib-container{
+        height: 11.5rem;
+    }
+}
+
+@media(max-width: 1000px){
+    #resp-hide,.sidebar, .album,.controls{
+      display: none;
+    }
+    .player-controls{
+        width: 34%;
+    }
+    .menu-btn{
+        display: block;
+        font-size: 1.4rem;
+        position: absolute;
+        z-index: 10;
+        top: 30px;
+        left: 30px;
+    }
+    .main-nav{
+        width: 98vw;
+    }
+    .badge-container{
+        margin-left: 2rem;
+    }
+    .main{
+        padding: 0.7rem 0.2rem
+    }
+    .library , .nav{
+        background-color: transparent;
+    }
+  }

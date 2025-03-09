@@ -13,7 +13,14 @@
 </head>
 <body>
     <main class="main">
+        <input type="checkbox" id="sidebar-toggle" class="sidebar-checkbox">
+        <label for="sidebar-toggle" class="menu-btn">
+            <i class="fas fa-bars"></i> <!-- Hamburger icon -->
+        </label>
         <aside class="sidebar">
+            <label for="sidebar-toggle" class="cross-btn">
+                <i class="fas fa-close"></i> <!-- Close icon -->
+            </label>
             <nav class="nav">
                 <div class="nav-option">
                     <i class="fas fa-home"></i>
@@ -53,6 +60,7 @@
         </aside>
         <section class="main-content">
             <nav class="main-nav">
+               
                 <div class="main-nav-icons">
                     <span class="badge-container"><i class="fas fa-chevron-left"></i></span>
                     <span class="badge-container" id="resp-hide"><i class="fas fa-chevron-right" ></i></span>
