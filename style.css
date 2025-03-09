@@ -23,7 +23,7 @@ body{
 .music-player{
     background-color: #121212;
     width: 100vw;
-    height: 8%;
+    height: 10%;
     position: fixed;
     bottom: 0;
     display: flex;
@@ -319,5 +319,59 @@ text-decoration: underline;
     gap: 1rem;
 }
 .volume-slider{
-    accent-color: green;
+    accent-color: #1bd760;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+}
+.player-controls{
+display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-bottom: 1.7%;
+    align-items: center;
+}
+.player-bar{
+    display: flex;
+    width: 70%;
+    margin-left: 10%;
+}
+.player-control-icon{
+    height: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.play-icon{
+    opacity: 1;
+    height: 2.3rem;
+    transition: height 0.2s ease;
+}
+.play-icon:hover{
+    opacity: 0.9;
+    height: 2.4rem;
+}
+.progress{
+    width: 70%;
+    appearance: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.progress::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius:50% ;
+    background-color: #1bd760;
+    margin-top:-6px;
 }
