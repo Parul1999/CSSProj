@@ -9,7 +9,7 @@ body{
 .main{
     display: flex;
     height: 100vh;
-    padding: 2.2rem 0.2rem;
+    padding: 1.2rem 0.2rem;
 }
 
 .main-content{
