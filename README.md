@@ -1,6 +1,6 @@
 # 🎵 Spotify UI Clone
 
-A responsive **Spotify web player clone** designed using **HTML, CSS (Flexbox & Grid), and FontAwesome icons**. This project replicates the Spotify user interface while ensuring **mobile-friendly responsiveness**—all without JavaScript!
+A responsive **Spotify web player clone** designed using **HTML, CSS (Flexbox), and FontAwesome icons**. This project replicates the Spotify user interface while ensuring **mobile-friendly responsiveness**—all without JavaScript!
 
 ## 🌟 Live Demo
 🔗 **[Check it out here](https://spotifystyle.netlify.app/)**
