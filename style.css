@@ -26,6 +26,12 @@ body{
     height: 8%;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;  
+    padding: 0.5rem 1rem;
+    align-items: center;
+    z-index: 1;
+    box-sizing: border-box;  
 }
 /* Sidebar */
 .sidebar{
@@ -277,6 +283,14 @@ text-decoration: underline;
     gap: 8%;
     justify-content: flex-start;
     padding-left: 1%;
+    align-items: center;
+}
+.controls{
+    width: 20%;
+    display: flex;
+    gap: 8%;
+    justify-content: flex-end;
+    padding-left: 1%;
 }
 .album-img{
     width: 50px;
@@ -303,6 +317,7 @@ text-decoration: underline;
 .album-controls{
     display: flex;
     gap: 1rem;
-    justify-content: flex-end;
-    margin-top: 1%;
+}
+.volume-slider{
+    accent-color: green;
 }
