@@ -21,7 +21,7 @@ body{
     padding-bottom: 3rem;
 }
 .music-player{
-    background-color: greenyellow;
+    background-color: #121212;
     width: 100vw;
     height: 8%;
     position: fixed;
@@ -203,6 +203,10 @@ color: #ffffff;
     min-height: fit-content;
     padding: 0.5rem 0.75rem;
     cursor: pointer;
+    
+}
+.img-container{
+    position: relative;
 }
 .card:hover{
     background-color:#9191912d;
@@ -214,6 +218,19 @@ color: #ffffff;
 .card img{
     width: 100%;
     border-radius: 1rem;
+}
+.card:hover .overlay-image{
+    opacity: 0.8;
+}
+.overlay-image{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    filter: invert(71%) sepia(85%) saturate(1676%) hue-rotate(86deg) brightness(200%) contrast(106%);
+    width: 22% !important;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
 }
 .card-head-container{
     display: flex;
