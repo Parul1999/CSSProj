@@ -427,4 +427,8 @@ display: flex;
     .library , .nav{
         background-color: transparent;
     }
+    .progress{
+        width: 53%;
+
+    }
   }
