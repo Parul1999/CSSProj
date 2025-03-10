@@ -17,7 +17,7 @@ body{
     /* To get all the space that is left */
     flex:1 ;
     border-radius: 1rem;
-    overflow-y: auto;
+    overflow: hidden auto;
     padding-bottom: 3rem;
 }
 .music-player{
